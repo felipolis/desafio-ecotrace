@@ -25,8 +25,30 @@ Back-end
 ## Como Executar
 
 1. Clone o Projeto
-2. Defina as variaveis de ambiente do servidor
-3. Execute o cliente
-4. Execute o servidor
+
+   ```bash
+   git clone https://github.com/felipolis/desafio-ecotrace.git
+   cd desafio-ecotrace
+   ```
+2. Crie o arquivo das variaveis de ambiente no servidor
+
+   ```bash
+   cd api
+   cp .env.example .env
+   ```
+3. Instale as dependencias e execute o servidor
+
+   ```bash
+   yarn
+   yarn dev
+   ```
+4. Instale as dependencias e execute o cliente
+
+   ```bash
+   cd ..
+   cd cliente
+   yarn
+   yarn dev
+   ```
 
 ## Layout
