@@ -50,5 +50,3 @@ Back-end
    yarn
    yarn dev
    ```
-
-## Layout
