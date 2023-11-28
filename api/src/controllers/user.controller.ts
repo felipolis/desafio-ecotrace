@@ -222,6 +222,15 @@ const updateInfo = async (
       updateData.avatarUrl = githubUser.avatar_url;
     }
 
+    // Verifica se alterou a senha para atualizar
+    if (updateData.password) {
+      // Define a senha
+      const { salt, hash } = setPassword(updateData.password);
+
+      updateData.password = hash;
+      updateData.salt = salt;
+    }
+
     // Atualiza o usuário
     const updatedUser = await prisma.user.update({
       where: {

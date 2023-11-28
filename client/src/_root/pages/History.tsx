@@ -45,7 +45,7 @@ const History = () => {
       <div className='flex flex-col justify-between gap-5 sm:flex-row'>
         <div className='flex flex-col items-center justify-center sm:items-start'>
           <h2 className='h3-bold sm:h2-bold'>
-            Search History | {user.username}
+            Search History | <Link to={`/${user.username}`}>{user.username}</Link>
           </h2>
           <p className='base-semibold'>
             Total encontrado: {history.length}

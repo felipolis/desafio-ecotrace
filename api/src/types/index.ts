@@ -4,6 +4,7 @@ export type IUpdateInfo = {
   password?: string;
   username?: string;
   avatarUrl?: string;
+  salt?: string;
 };
 
 export type IUser = {
